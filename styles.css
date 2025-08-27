@@ -2,17 +2,41 @@
     --primary-color: black;
     --secondary-color: rgb(253, 220, 225);
     --student-background: rgba(250, 232, 235, 0.904);
+    --text: rgb(251, 128, 148);
+    --fall-color:rgb(116, 45, 66);
+--main-color: white;
+  --nature-color: rgb(4, 44, 4);
+  --coffee: rgba(83, 19, 19, 0.808);
 }
 
     body {
     font-family:Arial, Helvetica, sans-serif
 }
 
+.logo {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--text);
+    padding: 10px;
+}
+
+.slogan {
+    font-weight: bold;
+}
+
+.welcome {
+    text-align: center;
+    color: var(--coffee);
+}
+
+main .home {
+    background-color: var(--nature-color);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* fix: center all cards */
-    background-color: white;
+    justify-content: center;  
     color: var(--primary-color);
     gap: 20px;
     padding: 20px;
@@ -34,9 +58,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--student-background);
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     height: 100%; /* makes all cards equal height */
 }
 
@@ -46,4 +69,21 @@
   border-radius: 50%; /* makes image circular */
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+.view-info-btn {
+    background-color: var(--student-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 3px solid white;
+    color: var(--text);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--main-color);
+    padding: 10px;
+    font-weight: bold;
 }
