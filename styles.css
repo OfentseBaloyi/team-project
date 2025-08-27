@@ -35,3 +35,19 @@
     color: var(--primary-color);
     font-weight: bold;
 }
+
+.student-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+}
