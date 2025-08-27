@@ -30,7 +30,7 @@
 }
 
 main .home {
-    background-color: var(--nature-color);
+    background-color: var(--fall-color);
 }
 
 .container {
@@ -51,8 +51,9 @@ main .home {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex: 0 1 calc(33.333% - 40px); /* force 3 per row */
     box-sizing: border-box;
+    color: var(--fall-color);
+    font-weight: bold;
 }
-
 
 .box {
     display: flex;
