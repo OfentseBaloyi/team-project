@@ -28,7 +28,10 @@
     list-style: none;
     display: flex;
     gap: 25px;
-    
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link {
@@ -37,12 +40,27 @@
     font-weight: bold;
 }
 
-.student-info {
+.container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;  /* fix: center all cards */
+    background-color: white;
+    color: var(--primary-color);
+    gap: 20px;
+    padding: 20px;
 }
+
+.student-card {
+    text-align: center;
+    background-color: var(--student-background); /* fix typo */
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(33.333% - 40px); /* force 3 per row */
+    box-sizing: border-box;
+}
+
 
 .box {
     display: flex;
@@ -51,4 +69,13 @@
     background-color: var(--student-background);
     border-radius: 5px;
     padding: 10px;
+    height: 100%; /* makes all cards equal height */
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* makes image circular */
+  object-fit: cover;
+  margin-bottom: 10px;
 }
