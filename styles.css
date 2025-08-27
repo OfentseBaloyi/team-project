@@ -2,53 +2,88 @@
     --primary-color: black;
     --secondary-color: rgb(253, 220, 225);
     --student-background: rgba(250, 232, 235, 0.904);
+    --text: rgb(251, 128, 148);
+    --fall-color:rgb(116, 45, 66);
+--main-color: white;
+  --nature-color: rgb(4, 44, 4);
+  --coffee: rgba(83, 19, 19, 0.808);
 }
 
     body {
     font-family:Arial, Helvetica, sans-serif
 }
 
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.logo {
     background-color: var(--secondary-color);
-    position: sticky;
-    
+    text-align: center;
+    color: var(--text);
+    padding: 10px;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.navigation-menu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    
-}
-
-.nav-link {
-    text-decoration: none;
-    color: var(--primary-color);
+.slogan {
     font-weight: bold;
 }
 
-.student-info {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+.welcome {
+    text-align: center;
+    color: var(--coffee);
 }
+
+main .home {
+    background-color: var(--nature-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    color: var(--primary-color);
+    gap: 20px;
+    padding: 20px;
+}
+
+.student-card {
+    text-align: center;
+    background-color: var(--student-background); 
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(33.333% - 40px); /* force 3 per row */
+    box-sizing: border-box;
+}
+
 
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--student-background);
     border-radius: 5px;
+    padding: 5px;
+    height: 100%; /* makes all cards equal height */
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* makes image circular */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.view-info-btn {
+    background-color: var(--student-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 3px solid white;
+    color: var(--text);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--main-color);
     padding: 10px;
+    font-weight: bold;
 }
