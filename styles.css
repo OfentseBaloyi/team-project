@@ -79,6 +79,11 @@ main .home {
     border: 3px solid white;
     color: var(--text);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.view-info-btn:hover {
+    background-color: var(--nature-color);
 }
 
 footer {
