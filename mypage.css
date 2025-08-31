@@ -10,6 +10,7 @@
   --coffee: rgba(83, 19, 19, 0.808);
   --radius: 14px;
   --transition: 0.3s cubic-bezier(.4,0,.2,1);
+
 }
 
 /*target all elemets by changing the box defaults*/
@@ -111,7 +112,7 @@ body {
   color: var(--coffee);
 }
 
-#social-link {
+
   text-decoration: none;
   color: var(--accent);
   margin-right: 10px; /* spacing between icons */
@@ -122,6 +123,7 @@ body {
 #social-link:hover {
   color: var(--nature-color);
 }
+
 
 .hero-img {
   flex: 0 0 220px;
