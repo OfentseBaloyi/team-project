@@ -112,7 +112,7 @@ body {
   color: var(--coffee);
 }
 
-
+#social-link {
   text-decoration: none;
   color: var(--accent);
   margin-right: 10px; /* spacing between icons */
