@@ -7,6 +7,7 @@
   --shadow: 0 4px 24px rgba(0,0,0,0.08);
   --radius: 14px;
   --transition: 0.3s cubic-bezier(.4,0,.2,1);
+<<<<<<< HEAD
   --primary-color: black;
     --secondary-color: rgb(253, 220, 225);
     --student-background: rgba(250, 232, 235, 0.904);
@@ -15,6 +16,8 @@
 --main-color: white;
   --nature-color: rgb(4, 44, 4);
   --coffee: rgba(83, 19, 19, 0.808);
+=======
+>>>>>>> 685cd6b7c02f05390811af3c9f78f7c1b8c2a101
 }
 
 /*target all elemets by changing the box defaults*/
@@ -113,6 +116,7 @@ body {
   margin-bottom: 2rem;
 }
 
+<<<<<<< HEAD
 #social-link  {
   text-decoration: none;
   color: var(--text);
@@ -126,6 +130,8 @@ body {
 }
 
 
+=======
+>>>>>>> 685cd6b7c02f05390811af3c9f78f7c1b8c2a101
 .hero-img {
   flex: 0 0 220px;
   display: flex;
