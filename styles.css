@@ -1,0 +1,101 @@
+:root {
+    --primary-color: black;
+    --secondary-color: rgb(253, 220, 225);
+    --student-background: rgba(250, 232, 235, 0.904);
+    --text: rgb(251, 128, 148);
+    --fall-color:rgb(116, 45, 66);
+--main-color: white;
+  --nature-color: rgb(4, 44, 4);
+  --coffee: rgba(83, 19, 19, 0.808);
+}
+
+    body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.logo {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--text);
+    padding: 10px;
+}
+
+.slogan {
+    font-weight: bold;
+}
+
+.welcome {
+    text-align: center;
+    color: var(--coffee);
+}
+
+main .home {
+    background-color: var(--fall-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    color: var(--primary-color);
+    gap: 20px;
+    padding: 20px;
+    height: 100%; /* makes all cards equal height */
+    align-items: stretch;
+}
+
+.student-card {
+    text-align: center;
+    background-color: var(--student-background); 
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(33.333% - 40px); /* force 3 per row */
+    box-sizing: border-box;
+    color: var(--fall-color);
+    font-weight: bold;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100%; /* makes cards equal in height */
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* image becomes circular */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.view-info-btn {
+    background-color: var(--student-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 3px solid white;
+    color: var(--text);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.view-info-btn:hover {
+    background-color: var(--nature-color);
+    margin-top: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--main-color);
+    padding: 10px;
+    font-weight: bold;
+}
