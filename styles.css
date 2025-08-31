@@ -40,19 +40,24 @@ main .home {
     color: var(--primary-color);
     gap: 20px;
     padding: 20px;
+    height: 100%; /* makes all cards equal height */
+    align-items: stretch;
 }
 
 .student-card {
     text-align: center;
     background-color: var(--student-background); 
-    width: 200px;
+    width: 100%;
     padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex: 0 1 calc(33.333% - 40px); /* force 3 per row */
     box-sizing: border-box;
     color: var(--fall-color);
     font-weight: bold;
+    
 }
 
 .box {
@@ -61,13 +66,13 @@ main .home {
     align-items: center;
     border-radius: 5px;
     padding: 5px;
-    height: 100%; /* makes all cards equal height */
+    height: 100%; /* makes cards equal in height */
 }
 
 .profile-picture {
   width: 100px;
   height: 100px;
-  border-radius: 50%; /* makes image circular */
+  border-radius: 50%; /* image becomes circular */
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -84,6 +89,7 @@ main .home {
 
 .view-info-btn:hover {
     background-color: var(--nature-color);
+    margin-top: auto;
 }
 
 footer {
