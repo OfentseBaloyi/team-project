@@ -47,7 +47,7 @@ main .home {
 .student-card {
     text-align: center;
     background-color: var(--student-background); 
-    width: 200px;
+    width: 100%;
     padding: 10px;
     flex-direction: column;
     justify-content: space-between;
