@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*variables and global styles*/
 :root {
   --primary: black; 
@@ -83,7 +84,7 @@ body {
 }
 
 .hero {
-  background: var(--bg)
+  background: var(--bg);
   padding: 60px 0 40px 0;
 }
 
@@ -109,6 +110,18 @@ body {
   font-size: 1.15rem;
   margin-bottom: 2rem;
   color: var(--coffee);
+}
+
+#social-link {
+  text-decoration: none;
+  color: var(--accent);
+  margin-right: 10px; /* spacing between icons */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 20px;
+}
+
+#social-link:hover {
+  color: var(--nature-color);
 }
 
 .hero-img {
@@ -361,4 +374,3 @@ body {
   .project-card {
     padding: 1.2rem 0.7rem;
   }
-}
